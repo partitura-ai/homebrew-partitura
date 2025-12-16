@@ -5,7 +5,7 @@ Official Homebrew tap for [Partitura](https://partitura-ai.com) - the AI agent o
 ## Installation
 
 ```bash
-brew install --cask partitura-ai/partitura/partitura
+brew install --cask gabriel-feang/partitura/partitura
 ```
 
 After the tap is added, you can also use the shorter version:
@@ -34,7 +34,6 @@ This will remove the app and optionally clean up application data.
 Partitura is an AI agent orchestration system that manages multiple AI agents (called "sections" like an orchestra) to collaboratively build software projects. Think of it as having an entire development team of AI specialists working together.
 
 - **Website**: [partitura-ai.com](https://partitura-ai.com)
-- **Documentation**: [partitura-ai.com/docs](https://partitura-ai.com/docs)
 - **Support**: support@partitura-ai.com
 
 ## License
