@@ -7,6 +7,8 @@ cask "partitura" do
   desc "AI agent orchestration platform - conduct your orchestra of AI developers"
   homepage "https://partitura-ai.com"
 
+  depends_on formula: "tmux"
+
   livecheck do
     url "https://partitura-ai.com/api/latest-version"
     strategy :json do |json|
