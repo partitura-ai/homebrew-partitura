@@ -1,6 +1,6 @@
 cask "partitura" do
-  version "1.0.0"
-  sha256 "965bd3a451e4f46ebf7d8a5d72a4c0dc09e9dbfba2b9c96d34fc3e97790a7c5d"
+  version "1.0.0-beta-1"
+  sha256 "5f2abbf8448467b5fd1813f95d08d71b3de7c11d0b290a31bd3ae355b6a0171b"
 
   url "https://jzmyrelamu5xuqoh.public.blob.vercel-storage.com/releases/macos/partitura-v#{version}.dmg"
   name "Partitura"
