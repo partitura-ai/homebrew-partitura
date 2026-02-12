@@ -1,6 +1,6 @@
 cask "partitura" do
-  version "0.7.0"
-  sha256 "0a0c8e454513de0c407355ec886cf81974916b8c30b60e6dbb9a6d780fb0f89a"
+  version "0.12.0"
+  sha256 "b02209448a819142054f79680a84af843f7cc5a995c48ff311a7c45b806b2515"
 
   url "https://jzmyrelamu5xuqoh.public.blob.vercel-storage.com/releases/macos/partitura-v#{version}.dmg"
   name "Partitura"
@@ -10,16 +10,16 @@ cask "partitura" do
   depends_on formula: "tmux"
 
   livecheck do
-    url "https://partitura-ai.com/api/latest-version"
+    url "https://www.partitura-ai.com/api/releases/latest"
     strategy :json do |json|
-      json["version"]
+      json.dig("macos", "version")&.gsub(/\Av|\.+\z/, "")
     end
   end
 
   app "Partitura.app"
 
   zap trash: [
-    "~/Library/Application Support/partitura",
+    "~/Library/Application Support/Partitura",
     "~/Library/Preferences/com.partitura.app.plist",
     "~/Library/Caches/com.partitura.app",
     "~/Library/Saved Application State/com.partitura.app.savedState",
