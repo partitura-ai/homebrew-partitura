@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 cask "partitura" do
-  version "2.3.0"
+  version "2.5.0+1"
   sha256 :no_check
 
   # Releases live on GitHub Releases (private repo) and are streamed through the
